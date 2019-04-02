@@ -48,15 +48,15 @@ social_media:
   youtube: spikespaz
 
 topics:
-  - name: Python 3
-    web_url: https://github.com/topics/python3
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
-    description: I have about four years of experience with Python. It is my most excersized langauge, being used in the majority of my projects.
-
   - name: D Language
     web_url: https://github.com/topics/d
     image_url: https://raw.githubusercontent.com/github/explore/7bb9edf7a8b94e13cbe6069a8f2f6a475ea7aaf2/topics/d/d.png
     description: In the last year I have fallen in love with D, a language designed as a successor to C++. While not widely known, this language is powerful and the syntax is beautiful.
+
+  - name: Python 3
+    web_url: https://github.com/topics/python3
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
+    description: I have about four years of experience with Python. It is my most excersized langauge, being used in the majority of my projects.
 
   - name: JavaScript
     web_url: https://github.com/topics/javascript
