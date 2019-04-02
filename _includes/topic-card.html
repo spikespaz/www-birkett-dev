@@ -14,7 +14,7 @@
     class="f3 lh-condensed text-center {% if site.style == 'dark' %}text-white{% else %}link-gray-dark{% endif %} mb-0 mt-1">
     {{ topic.name }}</p>
   {% if topic.description %}
-  <p class="f5 text-gray text-center mb-0 mt-1">{{ topic.description }}</p>
+  <p class="f5 text-center {% if site.style == 'dark' %}text-dimmed{% endif %} mb-0 mt-1">{{ topic.description }}</p>
   {% endif %}
 </a>
 {% else %}
