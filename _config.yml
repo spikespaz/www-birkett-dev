@@ -18,7 +18,7 @@ defaults:
 
 projects:
   popular:
-    limit: 6
+    limit: 3
     exclude:
       forks: false
       projects:
@@ -30,30 +30,35 @@ projects:
       projects:
         # - repo-name
 
-# social_media:
+social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
-  # instagram: your_username
+  instagram: spikespaz02
   # keybase: your_username
-  # linkedin: your_username
+  linkedin: jacob-birkett-b4882016a
   # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
+  stackoverflow: 2512078
+  telegram: spikespaz
+  twitter: spikespaz
   # unsplash: your_username
   # vk: your_username
   # website: http://your_website_url
-  # youtube: your_username
+  youtube: spikespaz
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Python 3
+    web_url: https://github.com/topics/python3
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
+    description: I have about four years of experience with Python. It is my most excersized langauge, being used in the majority of my projects.
 
-  - name: Web design
+  - name: D Language
+    web_url: https://github.com/topics/d
+    image_url: https://raw.githubusercontent.com/github/explore/7bb9edf7a8b94e13cbe6069a8f2f6a475ea7aaf2/topics/d/d.png
+    description: In the last year I have fallen in love with D, a language designed as a successor to C++. While not widely known, this language is powerful and the syntax is beautiful.
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: JavaScript
+    web_url: https://github.com/topics/javascript
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
+    description: JavaScript is my second-best language, being used as long as Python. While not my favorite language (I consider it a necessary evil), it has proven itself useful.
