@@ -17,15 +17,18 @@ defaults:
       layout: "post"
 
 projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
-  exclude:
-    forks: true
-    projects:
-    # - repo-name
+  popular:
+    limit: 6
+    exclude:
+      forks: false
+      projects:
+        # - repo-name
+  recent:
+    limit: 3
+    exclude:
+      forks: true
+      projects:
+        # - repo-name
 
 # social_media:
   # behance: your_username

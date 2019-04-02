@@ -1,23 +1,40 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I've built.</p>
+<h2 {% if site.style == 'dark' %}class="text-white" {% endif %}>Popular Projects</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Jacob's most popular open
+  source repositories.</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
-  {% if site.projects.sort_by == 'stars' %}
-    {% assign sort_order = 'stargazers_count', 'last' %}
+  {% assign sort_order = 'stargazers_count', 'last' %}
+
+  {% if site.projects.popular.exclude.forks %}
+  {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
   {% else %}
-    {% assign sort_order = 'pushed_at' %}
+  {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
   {% endif %}
 
-  {% if site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% for repository in filtered_repos | limit: site.projects.popular.limit %}
+  {% unless site.projects.popular.exclude.projects contains repository.name %}
+  <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+    {% include repo-card.html %}
+  </div>
+  {% endunless %}
+  {% endfor %}
+</div>
+<h2 {% if site.style == 'dark' %}class="text-white" {% endif %}>Recently Updated</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Three most recently committed
+  repositories.</p>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% assign sort_order = 'pushed_at' %}
+
+  {% if site.projects.recent.exclude.forks %}
+  {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
   {% else %}
-    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+  {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
   {% endif %}
 
-  {% for repository in filtered_repos | limit: site.projects.limit %}
-    {% unless site.projects.exclude.projects contains repository.name %}
-      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-        {% include repo-card.html %}
-      </div>
-    {% endunless %}
+  {% for repository in filtered_repos | limit: site.projects.recent.limit %}
+  {% unless site.projects.recent.exclude.projects contains repository.name %}
+  <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+    {% include repo-card.html %}
+  </div>
+  {% endunless %}
   {% endfor %}
 </div>
