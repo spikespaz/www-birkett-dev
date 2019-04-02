@@ -16,19 +16,25 @@ defaults:
     values:
       layout: "post"
 
-projects:
-  popular:
+sections:
+  -
+    title: Popular Projects
+    description: My most popular open source repositories.
+    sort_by: stars
+    limit: 3
+    exclude:
+      forks: false
+  -
+    title: Recently Updated
+    description: My most recently contributed projects.
+    sort_by: pushed
     limit: 3
     exclude:
       forks: false
       projects:
-        # - repo-name
-  recent:
-    limit: 3
-    exclude:
-      forks: true
-      projects:
-        # - repo-name
+        - firefox-nativedark
+        - search-deflector
+        - vscode-smoothtype
 
 social_media:
   # behance: your_username
