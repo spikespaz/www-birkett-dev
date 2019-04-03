@@ -62,7 +62,7 @@ topics:
   - name: Python 3
     web_url: https://github.com/topics/python3
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
-    description: I have about four years of experience with Python. It is my most excersized langauge, being used in the majority of my projects.
+    description: I have about four years of experience with Python. It is my most excersised langauge, being used in the majority of my projects.
 
   - name: JavaScript
     web_url: https://github.com/topics/javascript
