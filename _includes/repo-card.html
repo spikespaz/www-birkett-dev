@@ -1,3 +1,9 @@
+{% if site.style == 'dark' %}
+{% assign repo_icon_color = "#d3d3d3" %}
+{% else %}
+{% assign repo_icon_color = "#586069" %}
+{% endif %}
+
 <div
   class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow bg-gray-dark text-white{% else %}border border-gray-light bg-white text-gray{% endif %} rounded-1 p-3">
   <div>
@@ -5,7 +11,7 @@
       <h1 class="f4 lh-condensed mb-1">
         <a href="{{ repository.html_url }}"
           class="{% if site.style == 'dark' %}repo-name-color{% else %}text-blue{% endif %}">
-          {% octicon repo height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repo %}
+          {% octicon repo height:20 class:"mr-1 v-align-middle" fill:{{ repo_icon_color }} aria-label:repo %}
           {{ repository.name }}
         </a>
       </h1>
@@ -28,7 +34,7 @@
     {% if repository.forks_count %}
     <a href="{{ repository.html_url }}/network/members"
       class="d-inline-block {% if site.style == 'dark' %}text-white{% else %}link-gray{% endif %}  mr-4">
-      {% octicon star width:14 height:16 fill:{{ icon_color }} %}{{ repository.forks_count }}
+      {% octicon repo-forked width:14 height:16 fill:{{ icon_color }} %}{{ repository.forks_count }}
     </a>
     {% endif %}
   </div>
