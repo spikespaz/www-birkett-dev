@@ -9,7 +9,7 @@
   </div>
 
   <div class="{% if site.style == 'dark' %}text-dimmed{% else %}text-gray{% endif %} mb-2 ws-normal">
-    {{ post.excerpt }}
+    {{ post.excerpt | truncatewords: 30 }}
   </div>
   <div class="mb-2 ws-normal {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
     {{ post.date | date: "%B %d, %Y"}}
