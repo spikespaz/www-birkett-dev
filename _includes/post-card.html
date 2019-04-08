@@ -1,10 +1,17 @@
-<div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+<div class="height-full text-left {% if site.style == 'dark' %}box-shadow bg-gray-dark text-white{% else %}border border-gray-light bg-white text-gray{% endif %} rounded-1 p-3">
   <div class="d-flex flex-justify-between flex-items-start mb-1">
     <h1 class="f4 lh-condensed mb-1">
-      <a href="{{ site.baseurl }}{{ post.url }} Test">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}"
+        class="{% if site.style == 'dark' %}repo-name-color{% else %}text-blue{% endif %}">
+        {{ post.title }}
+      </a>
     </h1>
   </div>
 
-  <div>{{ post.excerpt }}</div>
-  <div class="text-gray mb-2 ws-normal">{{ post.date | date: "%B %d, %Y"}}</div>
+  <div class="{% if site.style == 'dark' %}text-dimmed{% else %}text-gray{% endif %} mb-2 ws-normal">
+    {{ post.excerpt }}
+  </div>
+  <div class="mb-2 ws-normal {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+    {{ post.date | date: "%B %d, %Y"}}
+  </div>
 </div>
