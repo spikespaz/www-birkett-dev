@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=K2D:600");
+
+.donate-button {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  // width: 200px;
+  line-height: 50px;
+  border-radius: 5px;
+  border: 3px solid #000;
+  color: #000;
+  font-family: "K2D", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-image: linear-gradient(45deg, #f00, #ff0);
+
+  &:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    opacity: 0;
+    background-image: linear-gradient(45deg, #f0f, #f00);
+    transition: opacity 400ms ease-out;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  & > span {
+    display: inline-block;
+
+    &:nth-child(2) {
+    width: 0;
+    font-family: "Segoe UI", sans-serif;
+    text-align: right;
+    opacity: 0;
+    transition: width 200ms ease-out, opacity 200ms ease-out 200ms;
+    }
+  }
+
+  &:hover > span:nth-child(2) {
+    width: 2ch;
+    opacity: 1;
+  }
+
+  &:not(:hover) > span:nth-child(2) {
+    opacity: 0;
+    transition: width 200ms ease-out 200ms, opacity 200ms ease-out;
+  }
+}
