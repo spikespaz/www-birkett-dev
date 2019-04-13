@@ -68,3 +68,7 @@ topics:
     web_url: https://github.com/topics/javascript
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
     description: JavaScript is my second-best language, being used as long as Python. While not my favorite language (I consider it a necessary evil), it has proven itself useful.
+
+donate_url: https://spikespaz.com/donate
+donate_text: Donate
+donate_width: 200px
