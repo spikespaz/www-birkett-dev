@@ -37,11 +37,13 @@
     display: inline-block;
 
     &:nth-child(2) {
-    width: 0;
-    font-family: "Segoe UI", sans-serif;
-    text-align: right;
-    opacity: 0;
-    transition: width 200ms ease-out, opacity 200ms ease-out 200ms;
+      width: 0;
+      font-family: "Segoe UI", sans-serif;
+      text-align: right;
+      opacity: 0;
+      transition: width 200ms ease-out, opacity 200ms ease-out 200ms;
+      color: transparent;
+      text-shadow: 0 0 0 #000;
     }
   }
 
