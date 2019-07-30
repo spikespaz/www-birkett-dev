@@ -23,6 +23,7 @@ sections:
     sort_by: stars
     limit: 3
     exclude:
+      archived: false
       forks: false
   -
     title: Recently Updated
@@ -30,6 +31,7 @@ sections:
     sort_by: pushed
     limit: 3
     exclude:
+      archived: true
       forks: false
       projects:
         - firefox-nativedark
@@ -44,6 +46,7 @@ social_media:
   instagram: spikespaz02
   # keybase: your_username
   linkedin: jacob-birkett-b4882016a
+  # mastodon: your_username
   # medium: your_username
   stackoverflow: 2512078
   telegram: spikespaz

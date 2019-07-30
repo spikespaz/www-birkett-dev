@@ -8,8 +8,12 @@
   {% assign sort_order = 'pushed_at' %}
   {% endif %}
 
-  {% if section.exclude.forks %}
-  {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% if section.exclude.archived && section.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
+  {% elsif section.exclude.archived %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
+  {% elsif section.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
   {% else %}
   {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
   {% endif %}
