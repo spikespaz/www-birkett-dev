@@ -58,22 +58,22 @@ social_media:
 
 topics:
   - name: Rust
-    web_url: https://github.com/topics/rust
+    web_url: https://www.rust-lang.org/
     image_url: /images/rust-logo.svg
     description: I am actively making a point of using Rust for new projects, and refreshing the old. This is a very powerful language, and I love how it catches many (really, a lot) of my mistakes before I start debugging. This is my favorite language to work with, and I hope it gains widespread adoption in the software development industry.
 
   - name: D Language
-    web_url: https://github.com/topics/d
+    web_url: https://dlang.org/
     image_url: https://raw.githubusercontent.com/github/explore/7bb9edf7a8b94e13cbe6069a8f2f6a475ea7aaf2/topics/d/d.png
     description: In the last year I have fallen in love with D, a language designed as a successor to C++. While not widely known, this language is powerful and the syntax is beautiful.
 
   - name: Python 3
-    web_url: https://github.com/topics/python3
+    web_url: https://www.python.org/
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
     description: I have about four years of experience with Python. It is my most excersised langauge, being used in the majority of my projects.
 
   - name: JavaScript
-    web_url: https://github.com/topics/javascript
+    web_url: https://www.javascript.com/
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
     description: JavaScript is my second-best language, being used as long as Python. While not my favorite language (I consider it a necessary evil), it has proven itself useful.
 
