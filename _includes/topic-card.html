@@ -1,6 +1,6 @@
 {% if topic.web_url %}
 <a href="{{ topic.web_url }}"
-  class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center rounded-1 {% if site.style == 'dark' %}bg-gray-dark{% else %}bg-white border border-gray-light{% endif %} p-5">
+  class="github-component position-relative hover-grow height-full no-underline d-flex flex-column text-center rounded-1 {% if site.style == 'dark' %}bg-gray-dark{% else %}bg-white border border-gray-light{% endif %} p-5">
   {% if topic.image_url %}
   <img src="{{ topic.image_url }}" width="64" height="64"
     class="mx-auto rounded-1 {% if topic.color %}topic-image-padded{% endif %} mb-3" {% if topic.color %}
