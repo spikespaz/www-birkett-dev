@@ -64,12 +64,12 @@ topics:
 
   - name: D Language
     web_url: https://dlang.org/
-    image_url: https://raw.githubusercontent.com/github/explore/7bb9edf7a8b94e13cbe6069a8f2f6a475ea7aaf2/topics/d/d.png
+    image_url: /images/dlang-logo.svg
     description: I started learning this language in early 2019, and found it very enjoyable and easy to work with. It has many advanced features that make clever coding and efficient design an absolute pleasure. It is a good replacement for C++, though there are some fundamental issues such as the standard library being garbage collected. I have since decided that Rust is a better fit for my projects, however in my opinion D has a nicer standard library.
 
   - name: Python 3
     web_url: https://www.python.org/
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
+    image_url: /images/python-logo.svg
     description: An age-old classic, Python. This is a language for anyone, with aspects appealing to both newbies and veteran programmers. The syntax is verbose, but elegant, it is easy to read and write, and some of the packages commonly used with Python are just the bee's knees. While I haven't been using Python recently in favor of faster compiled languages, it is still a favorite, and my (extensive) knowledge regarding it will never go to waste.
 
   - name: Go
@@ -80,7 +80,7 @@ topics:
 
   - name: JavaScript
     web_url: https://www.javascript.com/
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
+    image_url: /images/javascript-logo.svg
     description: I f#?*!&g hate Javascript. That is all.
 
 donate_url: https://spikespaz.com/donate
