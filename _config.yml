@@ -33,17 +33,17 @@ sections:
     exclude:
       archived: true
       forks: false
-      projects:
-        - firefox-nativedark
-        - search-deflector
-        - vscode-smoothtype
+      # projects:
+      #   - firefox-nativedark
+      #   - search-deflector
+      #   - vscode-smoothtype
 
 social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
-  instagram: spikespaz02
+  # instagram: spikespaz02
   # keybase: your_username
   linkedin: jacob-birkett-b4882016a
   # mastodon: your_username
@@ -54,9 +54,14 @@ social_media:
   # unsplash: your_username
   # vk: your_username
   # website: http://your_website_url
-  youtube: spikespaz
+  youtube: channel/UC8FiQJwmtUEo1vgdsQljecA
 
 topics:
+  - name: Rust
+    web_url: https://github.com/topics/rust
+    image_url: /images/rust-logo.svg
+    description: I am actively making a point of using Rust for new projects, and refreshing the old. This is a very powerful language, and I love how it catches many (really, a lot) of my mistakes before I start debugging. This is my favorite language to work with, and I hope it gains widespread adoption in the software development industry.
+
   - name: D Language
     web_url: https://github.com/topics/d
     image_url: https://raw.githubusercontent.com/github/explore/7bb9edf7a8b94e13cbe6069a8f2f6a475ea7aaf2/topics/d/d.png
