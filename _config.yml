@@ -72,6 +72,12 @@ topics:
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
     description: An age-old classic, Python. This is a language for anyone, with aspects appealing to both newbies and veteran programmers. The syntax is verbose, but elegant, it is easy to read and write, and some of the packages commonly used with Python are just the bee's knees. While I haven't been using Python recently in favor of faster compiled languages, it is still a favorite, and my (extensive) knowledge regarding it will never go to waste.
 
+  - name: Go
+    web_url: https://go.dev/
+    image_url: /images/go-logo.svg
+    # image_url: /images/go-gopher.png
+    description: You must admit, Go is a pretty cool language. Sure, it has its issues, it is very strict when it comes to naming and you might not like the style that was chosen. Sometimes it's also a bit too simple, and it requires an excess of code to get a simple thing done. But, that also means that programs are consistent. One person's code in Go looks very muck like another's, and it is easy to read. The concurrency features make so many things easier.
+
   - name: JavaScript
     web_url: https://www.javascript.com/
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
