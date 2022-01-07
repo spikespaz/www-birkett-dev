@@ -1,0 +1,8 @@
+{
+  "svg": "./favicon.svg",
+  "png_sizes": [16, 32, 64],
+  "ico_sizes": [16, 32, 64],
+  "png_name": "favicon-{}.png",
+  "ico_name": "../favicon.ico"
+}
+
