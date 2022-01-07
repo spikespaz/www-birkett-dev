@@ -29,14 +29,14 @@ sections:
     title: Recently Updated
     description: My most recently contributed projects.
     sort_by: pushed
-    limit: 3
+    limit: 6
     exclude:
       archived: true
       forks: false
-      # projects:
-      #   - firefox-nativedark
-      #   - search-deflector
-      #   - vscode-smoothtype
+      projects:
+        - firefox-nativedark
+        - search-deflector
+        - vscode-smoothtype
 
 social_media:
   # behance: your_username
@@ -60,22 +60,22 @@ topics:
   - name: Rust
     web_url: https://www.rust-lang.org/
     image_url: /images/rust-logo.svg
-    description: I am actively making a point of using Rust for new projects, and refreshing the old. This is a very powerful language, and I love how it catches many (really, a lot) of my mistakes before I start debugging. This is my favorite language to work with, and I hope it gains widespread adoption in the software development industry.
+    description: I am actively making a point of using Rust for new projects, and refreshing the old. This is a very powerful language, and I love how it catches many (really, a lot) of my mistakes before I start debugging. This is my favorite language to work with, and I hope it gains widespread adoption in the software development industry. Rust is a bit confusing to use at first, but once you understand how its ownership system works, it really is great!
 
   - name: D Language
     web_url: https://dlang.org/
     image_url: https://raw.githubusercontent.com/github/explore/7bb9edf7a8b94e13cbe6069a8f2f6a475ea7aaf2/topics/d/d.png
-    description: In the last year I have fallen in love with D, a language designed as a successor to C++. While not widely known, this language is powerful and the syntax is beautiful.
+    description: I started learning this language in early 2019, and found it very enjoyable and easy to work with. It has many advanced features that make clever coding and efficient design an absolute pleasure. It is a good replacement for C++, though there are some fundamental issues such as the standard library being garbage collected. I have since decided that Rust is a better fit for my projects, however in my opinion D has a nicer standard library.
 
   - name: Python 3
     web_url: https://www.python.org/
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
-    description: I have about four years of experience with Python. It is my most excersised langauge, being used in the majority of my projects.
+    description: An age-old classic, Python. This is a language for anyone, with aspects appealing to both newbies and veteran programmers. The syntax is verbose, but elegant, it is easy to read and write, and some of the packages commonly used with Python are just the bee's knees. While I haven't been using Python recently in favor of faster compiled languages, it is still a favorite, and my (extensive) knowledge regarding it will never go to waste.
 
   - name: JavaScript
     web_url: https://www.javascript.com/
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
-    description: JavaScript is my second-best language, being used as long as Python. While not my favorite language (I consider it a necessary evil), it has proven itself useful.
+    description: I f#?*!&g hate Javascript. That is all.
 
 donate_url: https://spikespaz.com/donate
 donate_text: Donate
