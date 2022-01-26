@@ -16,7 +16,7 @@
   {% if user.name %}
   <div class="{{ metadata_styles }}">
     {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-    <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white" {% endif %}>
+    <a href="https://github.com/{{ user.login }}" {% if site.style=='dark' %}class="text-white" {% endif %}>
       @{{ user.login }}
     </a>
   </div>
@@ -24,7 +24,7 @@
   {% if user.email %}
   <div class="{{ metadata_styles }}">
     {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-    <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white" {% endif %}>
+    <a href="mailto:{{ user.email }}" {% if site.style=='dark' %}class="text-white" {% endif %}>
       {{ user.email }}
     </a>
   </div>
@@ -53,6 +53,11 @@
   {% if user.hireable %}
   <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
   {% endif %}
+  <div>
+    <img
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=spikespaz&title_color=79a8de&bg_color=2f363d&border_color=2f363d&text_color=ffffff" />
+  </div>
+  <br />
   {% if site.donate_url %}
   <div class="{{ metadata_styles }}">
     {% include donate-button.html %}
